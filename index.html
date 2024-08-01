@@ -651,9 +651,31 @@ section{
         .hero-text p{
             font-size: 11px;
         }
-        .buang2{
-            display: none;
-        }
+        #menu-icon{
+    display: block;
+}
+.navlist{
+position: absolute;
+top: 100%;
+right: -100%;
+width: 190px;
+height: 30vh;
+background: rgba(0, 0, 0, 0.7);
+backdrop-filter: blur (5px);
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 50px 20px;
+transition: all .55s ease;
+}
+.navlist a{
+margin-left: 0;
+display: block;
+margin: 10px 0;
+}
+.navlist.open{
+right: 0;
+}  
         
 }
 
@@ -730,9 +752,9 @@ section{
 
 <div id="chapterContent3" class="chapter-content">
      <div class="chapter-buttons">
-        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/1Ppr6JPRfPw?si=k-i3_X76xta411B2')">Experiment 1</button> 
+        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/HJ_djG_PAf8?si=A_rc4L-LDmhKc5Oc')">Experiment 1</button> 
         <button class="button-style" onclick="openExperimentVideo('https://youtu.be/dpXn0V2mIFM?si=EHUFo3gRwFZEcYna')">Experiment 2</button> 
-        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/qUVpDsoLVn0?si=ZJzicSgng0zt83me')">Experiment 3</button> 
+        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/bq4Hw_QyCPI?si=SOM0tyGKlHMSnLM-')">Experiment 3</button> 
         <button class="button-style" onclick="openExperimentVideo ('https://youtu.be/ixjdffCuEnA?si=Q1_c_VTPvivDFgUB')">Experiment 4</button> 
         <button class="button-style" onclick="openExperimentVideo('https://youtu.be/n8JW-8Yvi_E?si=vRLIJGQLVGPXvgpo')">Experiment 5</button> 
         <button class="button-style" onclick="openExperimentVideo ('https://youtu.be/6pUU9Kv7tgo?si=2zaFIrVK7AFW0bbM')">Experiment 6</button> 
@@ -874,9 +896,9 @@ function eksButtons() {
 
     chapterContent3Div.innerHTML = `
         <div class="chapter-buttons"> <button class="button-style" <button <button
-        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/1Ppr6JPRfPw?si=k-i3_X76xta411B2')">Experiment 1</button>
+        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/HJ_djG_PAf8?si=A_rc4L-LDmhKc5Oc')">Experiment 1</button>
         <button class="button-style" onclick="openExperimentVideo('https://youtu.be/dpXn0V2mIFM?si=EHUFo3gRwFZEcYna')">Experiment 2</button>
-        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/qUVpDsoLVn@?si=ZJzicSgng0zt83me')">Experiment 3</button>
+        <button class="button-style" onclick="openExperimentVideo('https://youtu.be/bq4Hw_QyCPI?si=SOM0tyGKlHMSnLM-')">Experiment 3</button>
         <button  class="button-style" onclick="openExperimentVideo('https://youtu.be/ixjdffCuEnA?si=Q1_c_VTPvivDFgUB')">Experiment 4</button> 
         <button class="button-style" onclick="openExperimentVideo('https://youtu.be/n8JW-8Yvi_E?si=vRLIJGQLVGPXvgpo')">Experiment 5</button>
         <button  class="button-style" onclick="openExperimentVideo('https://youtu.be/6pUU9Kv7tgo?si=2zaFIrVK7AFW0bbM')">Experiment 6</button>
